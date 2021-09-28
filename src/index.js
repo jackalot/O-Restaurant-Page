@@ -1,5 +1,6 @@
 import makeHomePage from "./homeContent";
 import makeContactPage from "./contactContent";
+import makeMenuPage from "./menuContent";
 function component () {
     const header = document.createElement("header");
         const homeBtn = document.createElement("button");
@@ -20,6 +21,9 @@ function component () {
             menuBtn.textContent = "Menu";
             menuBtn.classList.add("Menu");
             header.append(menuBtn);
+            menuBtn.addEventListener('click', () => {
+                doPage(makeMenuPage);
+            })
     return header;
 }
 function doPage(func) {
