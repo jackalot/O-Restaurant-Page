@@ -1,0 +1,24 @@
+{
+  "name": "O-Restaurant-Page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "webpack-cli": "^4.8.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jackalot/O-Restaurant-Page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jackalot/O-Restaurant-Page/issues"
+  },
+  "homepage": "https://github.com/jackalot/O-Restaurant-Page#readme"
+}
