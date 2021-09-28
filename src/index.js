@@ -25,7 +25,7 @@ function component () {
     return content;
 }
 function doPage(func) {
-    component.appendChild(func);
+    document.body.appendChild(func);
 }
 window.onload = () => {
 document.body.appendChild(component());
