@@ -1,6 +1,7 @@
 import makeHomePage from "./homeContent";
 import makeContactPage from "./contactContent";
 import makeMenuPage from "./menuContent";
+import './style.css';
 function component () {
     const header = document.createElement("header");
         const homeBtn = document.createElement("button");
