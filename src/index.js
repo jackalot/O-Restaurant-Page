@@ -27,9 +27,12 @@ function component () {
 function doPage(func) {
     console.log("hi");
     const oldContent = document.querySelector("#content");
-    
-    let newContent = func();
-    document.body.appendChild(func);
+    while(oldContent.firstChild)
+    {
+        oldContent.removeChild(oldContent.firstChild);
+    }
+    let newContent = func;
+    document.body.appendChild(newContent);
 }
 window.onload = () => {
 document.body.appendChild(component());
