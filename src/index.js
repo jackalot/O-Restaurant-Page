@@ -25,6 +25,13 @@ function component () {
     return content;
 }
 function doPage(func) {
+    console.log("hi");
+    const oldContent = document.querySelector("#content");
+    while (oldContent.firstChild)
+    {
+        delete oldContent.firstChild;
+        console.log("hi")
+    }
     let newContent = func();
     document.body.appendChild(func);
 }
