@@ -1,9 +1,7 @@
 import makeHomePage from "./homeContent";
 import makeContactPage from "./contactContent";
 function component () {
-    const content = document.querySelector("#content");
-    const header = document.createElement("header");
-        content.append(header);
+    const header = document.querySelector("header");
         const homeBtn = document.createElement("button");
             homeBtn.textContent = "Home";
             homeBtn.classList.add("Home");
@@ -22,7 +20,7 @@ function component () {
             menuBtn.textContent = "Menu";
             menuBtn.classList.add("Menu");
             header.append(menuBtn);
-    return content;
+    return header;
 }
 function doPage(func) {
     console.log("hi");
@@ -31,8 +29,11 @@ function doPage(func) {
     {
         oldContent.removeChild(oldContent.firstChild);
     }
-    let newContent = func;
-    document.body.appendChild(newContent);
+    if(!oldContent.firstChild)
+    {
+        let newContent = func;
+        document.body.appendChild(newContent);
+    }
 }
 window.onload = () => {
 document.body.appendChild(component());
