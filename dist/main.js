@@ -1,1 +1,1 @@
-console.log("hello world");
+document.body.appendChild(function(){const t=document.querySelector("#content"),e=document.createElement("header");t.append(e);const n=document.createElement("button");n.textContent="Home",n.classList.add("Home"),e.append(n);const o=document.createElement("button");o.textContent="Contact Us",o.classList.add("Contact Us"),e.append(o);const c=document.createElement("button");return c.textContent="Menu",c.classList.add("Menu"),e.append(c),t}());
