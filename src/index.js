@@ -8,7 +8,7 @@ function component () {
             header.append(homeBtn);
         const contactBtn = document.createElement("button");
             contactBtn.textContent = "Contact Us";
-            contactBtn.classList.add("Contact Us");
+            contactBtn.classList.add("Contact-Us");
             header.append(contactBtn);
         const menuBtn = document.createElement("button");
             menuBtn.textContent = "Menu";
@@ -16,5 +16,4 @@ function component () {
             header.append(menuBtn);
     return content;
 }
-
-document.body.appendChild(component());
+window.onload(document.body.appendChild(component()));
